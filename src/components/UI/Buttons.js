@@ -3,6 +3,7 @@ import classNames from "classnames";
 import { loadCSS } from "fg-loadcss/src/loadCSS";
 import { withStyles } from "@material-ui/core/styles";
 import Icon from "@material-ui/core/Icon";
+import IconButton from "@material-ui/core/IconButton";
 
 const styles = theme => ({
   root: {
@@ -31,35 +32,48 @@ class FontAwesome extends React.Component {
 
     return (
       <div className={classes.root}>
-        <Icon
-          className={classNames(classes.icon, "fa fa-paper-plane")}
-          color="action"
-        />
-        <Icon
-          className={classNames(classes.icon, "fa fa-history")}
-          color="action"
-        />
-        <Icon
-          className={classNames(classes.icon, "fa fa-mobile")}
-          color="action"
-        />
-
-        <Icon
-          className={classNames(classes.icon, "fa fa-cog")}
-          color="action"
-        />
-        <Icon
-          className={classNames(classes.icon, "fa fa-user-friends")}
-          color="action"
-        />
-        <Icon
-          className={classNames(classes.icon, "fa fa-chart-area")}
-          color="action"
-        />
-        <Icon
-          className={classNames(classes.icon, "fab fa-twitter")}
-          color="action"
-        />
+        <IconButton>
+          <Icon
+            className={classNames(classes.icon, "fa fa-paper-plane")}
+            color="action"
+          />
+        </IconButton>
+        <IconButton>
+          <Icon
+            className={classNames(classes.icon, "fa fa-history")}
+            color="action"
+          />
+        </IconButton>
+        <IconButton>
+          <Icon
+            className={classNames(classes.icon, "fa fa-mobile")}
+            color="action"
+          />
+        </IconButton>
+        <IconButton>
+          <Icon
+            className={classNames(classes.icon, "fa fa-cog")}
+            color="action"
+          />
+        </IconButton>
+        <IconButton>
+          <Icon
+            className={classNames(classes.icon, "fa fa-user-friends")}
+            color="action"
+          />
+        </IconButton>
+        <IconButton>
+          <Icon
+            className={classNames(classes.icon, "fa fa-chart-area")}
+            color="action"
+          />
+        </IconButton>
+        <IconButton>
+          <Icon
+            className={classNames(classes.icon, "fab fa-twitter")}
+            color="action"
+          />
+        </IconButton>
       </div>
     );
   }

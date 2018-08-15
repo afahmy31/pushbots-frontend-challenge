@@ -3,13 +3,14 @@ import { withStyles } from "@material-ui/core/styles";
 import AppBar from "@material-ui/core/AppBar";
 import Toolbar from "@material-ui/core/Toolbar";
 import Typography from "@material-ui/core/Typography";
-import Button from "@material-ui/core/Button";
+import IconButton from "@material-ui/core/IconButton";
 import MenuIcon from "@material-ui/icons/Menu";
 import classNames from "classnames";
 import Avatar from "@material-ui/core/Avatar";
 import searchIcon from "./Images/search_white_27x27.png";
 import logo from "./Images/android_white_48x48.png";
 import avatar from "./Images/avatar.png";
+import MoreVertIcon from "@material-ui/icons/MoreVert";
 import "./AppBar.css";
 const styles = {
   root: {
@@ -26,7 +27,9 @@ function ButtonAppBar(props) {
     <div className={classes.root}>
       <AppBar position="static" style={{ backgroundColor: "#0497A8" }}>
         <Toolbar>
-          <MenuIcon />
+          <IconButton aria-label="More">
+            <MenuIcon style={{ color: "white" }} />
+          </IconButton>
           <img src={logo} id="logo" alt="logo" />
           <img src={searchIcon} alt="search" />
           <Typography color="inherit" className={classes.flex} />
@@ -61,8 +64,9 @@ function ButtonAppBar(props) {
             src={avatar}
             className={classNames(classes.avatar, classes.bigAvatar)}
           />
-
-          <Button color="inherit">Login</Button>
+          <IconButton aria-label="More">
+            <MoreVertIcon style={{ color: "white" }} />
+          </IconButton>
         </Toolbar>
       </AppBar>
     </div>

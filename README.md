@@ -9,7 +9,6 @@ This project was created using React's `create-react-app`. It uses `Material-ui`
 ## Getting Started
 
 Download the repository on your machine or run:
-
 ```
 git clone https://github.com/afahmy31/pushbots-frontend-challenge.git
 ```
@@ -17,15 +16,13 @@ git clone https://github.com/afahmy31/pushbots-frontend-challenge.git
 ### Installing
 
 To install all dependencies
-
 ```
 npm install
 ```
 
 ### Running
 
-To run development enviromnent
-
+To run the development enviromnent
 ```
 npm start
 ```

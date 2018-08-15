@@ -1,0 +1,14 @@
+#grid,
+#users,
+#logo {
+  fill: white;
+  margin: 0 10px 0 20px;
+}
+
+.Username {
+  display: flex;
+  padding: 0 10px 0 40px;
+}
+AppBar {
+  background-color: #0497a8;
+}

@@ -11,7 +11,7 @@ This project was created using React's `create-react-app`
 Clone the Repo on your machine or run:
 
 ```
-git clone
+git clone https://github.com/afahmy31/pushbots-frontend-challenge.git
 ```
 
 ### Installing
